@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicPlayer</title>
+    <!-- 样式 -->
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/com.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 播放器主体区域 -->
+        <div class="wrap_play" id="player">
+            <!-- 播放器头部 -->
+            <div class="search_bar">
+                <!-- 搜索歌曲 -->
+                <input type="text" autocomplete="off" v-model="query" @keyup.enter="searchMusic" >
+            </div>
+                <!-- 音乐列表 -->
+             <div class="song_wrapper">
+                <ul class="song_list">
+                    <li v-for="item in musicList">
+                        <!-- 点击放歌 -->
+                        <a href="javascript:;" @click='playMusic(item.id)'></a>
+                        <b>{{ item.name }}</b>
+                        <!-- <span>
+                        <i @click="playMv(item.mvid)" v-if="item.mvid!=0"></i>
+                        </span> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- 播放器进度条 -->
+            <div class="audio_con">
+                <audio ref='audio'  @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
+            </div>
+        </div>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/music.js"></script>
+
+</body>
+
+</html>

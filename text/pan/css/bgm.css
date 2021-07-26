@@ -1,0 +1,126 @@
+.song_wrapper,
+.search_bar,
+.audio_con,
+.comment_wrapper{
+    /* padding: 75px 50kpx 20px; */
+    background: #ffffff;
+}
+
+.wrap_play {
+    width: 10rem;
+    /* height: 500px; */
+    height: auto;
+    position: fixed;
+    overflow-y: auto;
+}
+
+ /* 搜索歌曲  */
+.search_bar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    /* height: 100px; */
+    height: 1.333333rem;
+    background-color: #1eacda;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 11;
+}
+
+/* 搜索框 */
+.search_bar input {
+    /* margin-left: 50px; */
+    margin-left: .666667rem;
+    /* height: 60px; */
+    height: .8rem;
+    /* width: 640px; */
+    width: 8.533333rem;
+    border: 0px;
+    /* border-radius: 16px; */
+    border-radius: 4rem;
+    background: url(../images/zoom.png) 8rem center no-repeat rgba(255, 255, 255, 0.45);
+    /* text-indent: 20px; */
+    text-indent: .266667rem;
+    outline: none;
+    /* font-size: 22px; */
+    font-size: .293333rem;
+}
+
+/* 音乐列表 */
+.song_wrapper {
+    height: 5.333333rem;
+    background:rgba(255, 255, 255, 0.3);
+    display: flex;
+    position: relative;
+}
+
+.song_list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;       /* 如果溢出框，则应该提供滚动机制。 */
+    overflow-x: auto;     /* 裁剪内容 - 不提供滚动机制。*/
+}
+
+.song_list li {
+    /* font-size: 24px; */
+    font-size: .32rem;
+    color: #333;
+    /* height: 40px; */
+    height: .533333rem;
+    display: flex;
+    /* width: 730px; */
+    width: 9.733333rem;
+    /* padding-left: 20px; */
+    padding-left: .266667rem;
+    flex-wrap: wrap;   /* 拆分浮动盒子 */
+    align-items: center;
+}
+
+.song_list li a {
+    display: block;
+    /* width: 25px; */
+    width: .333333rem;
+    height: .333333rem;
+    background: url(../images/play.png);
+    background-size: 100%;
+    margin-right: .066667rem;
+    box-sizing: border-box;
+}
+
+.song_list li b {
+    font-weight: normal;  /* 字体，笔记 */
+    /* width: 600px; */
+    width: 8rem;
+    overflow: hidden;   /* 内容会被修剪,并且其余内容是不可见的 */
+    text-overflow: ellipsis;   /* 文本溢出神略标记 */
+    white-space: nowrap;      /* 文本不换行 */
+    height: .533333rem;
+    line-height: .533333rem;
+}
+
+.audio_con{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    /* height: 100px; */
+    height: 1.333333rem;
+    background-color: #f1f3f4;
+    justify-content: space-evenly;
+}
+
+.myaudio {
+    width: 10rem;
+    /* height: 80px; */
+    height: 1.066667rem;
+    margin-top: .066667rem;
+    outline: none;
+    background-color: #f1f3f4;
+}

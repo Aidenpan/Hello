@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/com.css">
+    <link rel="stylesheet" href="css/bgm.css">
+    <link rel="preload" href="//at.alicdn.com/t/font_2697981_qcp1xv0i8x.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script src="js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap_play" id="player"> 
+        <!-- 搜索歌曲 -->
+        <div class="search_bar">
+            <input type="text" autocomplete="off" v-model="query" @keyup.enter="searchMusic">
+        </div>
+        <!-- 音乐列表-->
+        <div class="song_wrapper">
+            <ul class="song_list">
+                <li>
+                    <!-- 点击放歌 -->
+                    <a href="javascript:;"></a>
+                    <b>DADADADAD</b>
+                </li>
+                <li>
+                    <!-- 点击放歌 -->
+                    <a href="javascript:;"></a>
+                    <b>DADADADAD</b>
+                </li>
+            </ul>
+        </div>
+        <div class="comment_wrapper">
+            <h5 class="title">热门留言</h5>
+            <div class='comment_list'>
+                <dl>
+                    <dt><img alt=""></dt>
+                    <dd class="username">我叫啥</dd>
+                    <dd class="userdetail">我说啥</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="audio_con">
+            <audio ref='audio' controls autoplay loop class="myaudio"></audio>
+        </div>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 官网提供的 axios 在线地址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/bgm.js"></script>
+</body>
+</html>

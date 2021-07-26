@@ -1,0 +1,48 @@
+/* 阿里巴巴矢量图标库 */
+/* https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=2697981 */
+@font-face {
+    font-family: 'iconfont';  /* Project id 2697981 */
+    src: url('//at.alicdn.com/t/font_2697981_63os5nvdn0m.woff2?t=1627204817320') format('woff2'),
+         url('//at.alicdn.com/t/font_2697981_63os5nvdn0m.woff?t=1627204817320') format('woff'),
+         url('//at.alicdn.com/t/font_2697981_63os5nvdn0m.ttf?t=1627204817320') format('truetype');
+  }
+/* 图标样式 */
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: .213333rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 整体居中 */
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+/* 如果我们的屏幕超过了 750px  那么我们就按照 750设计稿来走 不会让我们页面超过750px */
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+ }

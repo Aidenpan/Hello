@@ -1,0 +1,81 @@
+
+/* 名字个人资料 */
+.page,
+.school,
+.work,
+.skills,
+.Introduction{
+    /* padding: 75px 50kpx 20px; */
+    padding: 1rem .666667rem .266667rem;
+    background: #ffffff;
+}
+
+.headr{
+    display: flex;
+    width: 8.666667rem;
+    height: .466667rem;
+}
+
+.no{
+    flex: 1;
+}
+
+.bgm{
+    font-size: .2rem;
+    width: auto;
+}
+
+.page p,
+.school p,
+.work p,
+.skills p,
+.Introduction p{
+    /* 
+    font-size: 28px;
+    line-height: 30px;
+    height: 35px;
+    width: 65px;
+     */
+    font-size: .373333rem;
+    line-height: .4rem;
+    height: .466667rem;
+}
+
+.page td{
+    /* 
+    border-bottom: 2px solid #43546b;
+    font-size: 14px;
+    height: 30px;
+    width: 325px;
+    */
+    border-bottom: .026667rem solid #43546b;
+    font-size: .186667rem;
+    height: .4rem;
+    width: 4.333333rem;
+}
+
+.school td,
+.work td{
+    /* 
+    border-bottom: 2px solid #43546b;
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+    */
+    font-size: .186667rem;
+    height: .4rem;
+    width: 4rem;
+}
+
+.skills td,
+.Introduction td{
+    /* 
+    border-bottom: 2px solid #43546b;
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+    */
+    font-size: .186667rem;
+    height: .4rem;
+    width: auto;
+}
