@@ -19,7 +19,8 @@
             <!-- 播放器头部 -->
             <div class="search_bar">
                 <!-- 搜索歌曲 -->
-                <input type="text" autocomplete="off" v-model="query" @keyup.enter="searchMusic" >
+                <a href="index.html" class="iconfont">&#xe606;</a>
+                <input type="text" value="回车搜索" autocomplete="off" v-model="query" @keyup.enter="searchMusic" >
             </div>
                 <!-- 音乐列表 -->
              <div class="song_wrapper">
